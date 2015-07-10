@@ -9,6 +9,7 @@
 </head>
 
 <body ng-app="flashCards">
+<loader></loader>
     <div ng-include="'templates/statistics.html'"></div>
     <div ng-controller="MainController">
         <button class="category-button" ng-repeat="category in categories" ng-click="getCategoryCards(category)" ng-class="{ active: clicked === category  }">{{category}}</button>
@@ -31,6 +32,7 @@
     <script src="js/factories/ScoreFactory.js"></script>
     <script src="js/controllers/MainController.js"></script>
     <script src="js/controllers/StatsController.js"></script>
+    <script src="js/directives/loader/loader.js"></script>
 </body>
 
 </html>
