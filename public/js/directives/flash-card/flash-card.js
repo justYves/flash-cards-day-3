@@ -8,7 +8,6 @@ app.directive('flashCard',function(ScoreFactory){
       // controller.answerQuestion(scope.flashCard.answer);
 
   scope.answerQuestion = function(answer) {
-    console.log(scope);
     if (!scope.answered) {
       scope.answered = true;
       if (answer.correct) {
